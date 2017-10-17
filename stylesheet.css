@@ -1,0 +1,135 @@
+/*CSS reset*/
+body, p{
+    padding: 0;
+    margin: 0;
+}
+/* General syles */
+body{  
+    color:#FFFFFF;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.wraper{
+    max-width: 1200px;
+    background: url(images/background-poster-rev.jpg) no-repeat #0C0F14;
+	background-position: center top;
+    background-size: 100%;
+    margin: 0 auto;
+    padding: 0.9em 4em;
+    border-top: 1.5em solid #E4E8E9;
+    border-right: 1em solid #E4E8E9;
+    border-bottom: 1.5em solid #E4E8E9;
+    border-left: 1em solid #E4E8E9;
+}
+.clear{
+	display: block;
+	clear: both;
+}
+/*Header*/
+.director{
+    text-align: right;
+    letter-spacing: 0.15em;
+    color:#324E64;
+	font-weight:300;
+}
+.director span{
+    letter-spacing: 0.05em;
+    font-size: 1.2em;
+	font-style:italic;
+}
+/*Leo and Tom's name credits at the top*/
+.actors .leo, .actors .tom{
+	display: inline-block;
+	font-size: 2.25em;
+	font-weight:500;
+	letter-spacing: 0.13em;
+}
+/*The first "I" in DiCaprio */
+.actors .leo span{
+	font-size: 0.8em;
+}
+/*float leo to the left to make a gap and get to margin*/
+.actors .leo{
+	float: left;
+}
+/*float Tom to the right to make a gap and get to margin*/
+.actors .tom{
+	float: right;
+}
+/*Main*/
+main{
+	text-align: right;
+}
+/*BLOOD LOST. LIFE FOUND. slogan*/
+.slogan{
+	margin-top: 125%;
+	font-size: 1.5em;
+	font-weight:500;
+	letter-spacing: 0.25em;
+	color:#DEE1F2;
+}
+/*THE REVENANT title*/
+h1.title{
+	margin: -0.4em -0.11em 0 0;
+	font-size: 4.95em;
+	font-weight:400;
+	letter-spacing: 0.18em;
+}
+h1.title:hover{
+	color:#F00;
+}
+h2.subtext{
+	margin: -1em 0 0 0;
+	font-size: 1.55em;
+	font-weight:300;
+	letter-spacing: 0.18em;
+}
+footer{
+    letter-spacing: 0.1em;
+    color:#324E64;
+	font-weight:400;
+	font-style:italic;
+}
+.credit-title{
+	display: inline-block;
+	font-size: 0.45em;
+	line-height: 1.05em;
+	text-align: right;
+	margin-right: 0.5em
+}
+.novel, .screenplay, .directed, .release{
+	display: inline;
+}
+.screenplay{
+	float: right;
+}
+.directed, .release{
+	float: right;
+}
+.release{
+	color:#FFFFFF;
+	font-style:normal;
+	font-size: 1.15em;
+	font-weight:400;
+}
+.directed{
+	margin-right: 0.5em
+}
+.rating{
+	width: 10%;
+	float: left;
+}
+/* Responsize*/
+@media (max-width: 60em) {
+	h1.title{
+		font-size: 2.40em;
+		line-height: 1.0em;
+	}
+	h1.title, h2.subtext{
+	margin-top: 0;
+	}
+	.director{
+	font-size: 0.80em;
+    color:#FFFFFF;
+}
